@@ -9,7 +9,7 @@ const objetoA: {
   chaveB: 'valor B',
 };
 
-objetoA.chaveA = 'Outro valor';
+/*objetoA.chaveA = 'Outro valor';*/
 objetoA.chaveC = 'Nova chave';
 objetoA.chaveD = 'Nova chave';
 
