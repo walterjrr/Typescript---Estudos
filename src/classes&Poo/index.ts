@@ -21,8 +21,8 @@ export class UserAccount {
 }
 
 class CharAccount extends UserAccount {
-  nickname1: string;
-  level1: number;
+  private nickname1: string;
+  readonly level1: number;
 
   constructor(name1: string, age1: number, nick: string, level: number) {
     super(name1, age1);
@@ -30,10 +30,17 @@ class CharAccount extends UserAccount {
     this.nickname1 = nick;
     this.level1 = level;
   }
+
+  reverseName(): string {
+    return this.name1.split('').reverse().join('');
+  }
 }
 
 const Walter = new UserAccount(`walter`, 17);
 console.log(Walter);
 
 const vitoria = new CharAccount('VITORIA', 16, 'vi', 4);
+/*vitoria.nickname1 = 'witoria';*/
 console.log(vitoria);
+console.log(vitoria.level1);
+console.log(vitoria.reverseName());
