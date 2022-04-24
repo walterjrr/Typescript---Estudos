@@ -13,6 +13,6 @@ export function mapStrings(
   return newArray;
 }
 
-const abc = ['a', 'b', 'c'];
+const abc = ['a', 'b', 'c', 'd'];
 const abcMapped = mapStrings(abc, (item) => item.toUpperCase());
 console.log(abcMapped);
